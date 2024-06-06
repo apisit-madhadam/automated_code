@@ -51,7 +51,7 @@
   dependencies:
     "defer-to-connect" "^1.0.1"
 
-"@types/node@*", "@types/node@^18.17.5":
+"@types/node@*":
   "integrity" "sha512-c1vku6qnTeujJneYH94/4aq73XrVcsJe35UPyAsSok1ijiKrkRzK+AxQPSpNMUnC03roWBBwJx/9I8V7lQoxmA=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.18.11.tgz"
   "version" "18.18.11"
@@ -293,7 +293,7 @@
   "resolved" "https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.13.tgz"
   "version" "0.2.13"
 
-"buffer@^5.2.1", "buffer@^5.5.0", "buffer@^5.6.0":
+"buffer@^5.2.1", "buffer@^5.5.0", "buffer@^5.7.1":
   "integrity" "sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ=="
   "resolved" "https://registry.npmjs.org/buffer/-/buffer-5.7.1.tgz"
   "version" "5.7.1"
@@ -655,20 +655,19 @@
   "resolved" "https://registry.npmjs.org/cypress-xpath/-/cypress-xpath-2.0.1.tgz"
   "version" "2.0.1"
 
-"cypress@^13.5.1", "cypress@>=6.2.0", "cypress@>3.0.0":
-  "integrity" "sha512-yqLViT0D/lPI8Kkm7ciF/x/DCK/H/DnogdGyiTnQgX4OVR2aM30PtK+kvklTOD1u3TuItiD9wUQAF8EYWtyZug=="
-  "resolved" "https://registry.npmjs.org/cypress/-/cypress-13.5.1.tgz"
-  "version" "13.5.1"
+"cypress@^13.11.0", "cypress@>=6.2.0", "cypress@>3.0.0":
+  "integrity" "sha512-NXXogbAxVlVje4XHX+Cx5eMFZv4Dho/2rIcdBHg9CNPFUGZdM4cRdgIgM7USmNYsC12XY0bZENEQ+KBk72fl+A=="
+  "resolved" "https://registry.npmjs.org/cypress/-/cypress-13.11.0.tgz"
+  "version" "13.11.0"
   dependencies:
     "@cypress/request" "^3.0.0"
     "@cypress/xvfb" "^1.2.4"
-    "@types/node" "^18.17.5"
     "@types/sinonjs__fake-timers" "8.1.1"
     "@types/sizzle" "^2.3.2"
     "arch" "^2.2.0"
     "blob-util" "^2.0.2"
     "bluebird" "^3.7.2"
-    "buffer" "^5.6.0"
+    "buffer" "^5.7.1"
     "cachedir" "^2.3.0"
     "chalk" "^4.1.0"
     "check-more-types" "^2.24.0"
@@ -686,7 +685,7 @@
     "figures" "^3.2.0"
     "fs-extra" "^9.1.0"
     "getos" "^3.2.1"
-    "is-ci" "^3.0.0"
+    "is-ci" "^3.0.1"
     "is-installed-globally" "~0.4.0"
     "lazy-ass" "^1.6.0"
     "listr2" "^3.8.3"
@@ -1311,7 +1310,7 @@
   dependencies:
     "ci-info" "^2.0.0"
 
-"is-ci@^3.0.0":
+"is-ci@^3.0.1":
   "integrity" "sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ=="
   "resolved" "https://registry.npmjs.org/is-ci/-/is-ci-3.0.1.tgz"
   "version" "3.0.1"

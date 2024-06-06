@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-12T06:15:41.867Z",
+    "end": "2023-09-12T06:16:24.620Z",
+    "duration": 42753,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c05676b8-bce4-4682-9d69-9b7561745b42",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec_response.cy.js",
+      "file": "cypress\\e2e\\spec_response.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d5861acf-da29-4ae3-b861-08b3d5e85269",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 40596,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Login.png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Login.png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Login.png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Linkage.png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Linkage.png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Linkage.png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - GDX.png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - GDX.png\",\n      \"\\\\spec_response.cy.js\\\\notebook - GDX.png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Ervice-search.png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Ervice-search.png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Ervice-search.png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Report.png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Report.png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Report.png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Manage-user.png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Manage-user.png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Manage-user.png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Manage-basic-info.png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Manage-basic-info.png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Manage-basic-info.png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - history-search.png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - history-search.png\",\n      \"\\\\spec_response.cy.js\\\\notebook - history-search.png\"\n    ]\n  ]\n}",
+              "code": "// Visit the main page first\n// cy.login('admin01', '!Sys@dmin1');\n// cy.wait(1000);\n// Iterate through the pageUrl array\npageUrl.forEach(page => {\n  cy.visit(page.url); // Visit the current page URL\n  cy.log('Viewport: iphone 14');\n  cy.viewport(390, 844);\n  cy.screenshot(`iphone 14 - ${page.name}`, {\n    capture: 'runner' // Prevent JavaScript timers and animations\n  });\n  cy.wait(1000);\n  cy.log('Viewport: ipad 11');\n  cy.viewport(834, 1194);\n  cy.screenshot(`ipad 11 - ${page.name}`, {\n    capture: 'runner' // Prevent JavaScript timers and animations\n  });\n  cy.wait(1000);\n  cy.log('Viewport: notebook');\n  cy.viewport(1920, 1080);\n  cy.screenshot(`notebook - ${page.name}`, {\n    capture: 'runner' // Prevent JavaScript timers and animations\n  });\n  cy.wait(1000);\n  // Add your testing code for each page here\n  // For example, you can use cy.get() to interact with elements on the page.\n  // You can also use assertions with cy.should() to check for expected behavior.\n});",
+              "err": {},
+              "uuid": "be48f37c-0aa1-4119-8f0d-38060dc8afbd",
+              "parentUUID": "d5861acf-da29-4ae3-b861-08b3d5e85269",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "be48f37c-0aa1-4119-8f0d-38060dc8afbd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 40596,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

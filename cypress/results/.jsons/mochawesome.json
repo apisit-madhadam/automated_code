@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-11-13T08:26:30.887Z",
+    "end": "2023-11-13T08:35:14.180Z",
+    "duration": 523293,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e6b795ba-74d6-4d81-8489-912bc823b022",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec_response.cy.js",
+      "file": "cypress\\e2e\\spec_response.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "093a22bb-8cad-4408-8298-7aa6cb5e474e",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 410747,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Home (1).png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Home (1).png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Home (1).png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Add\\\\Edit Linkage (1).png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Add\\\\Edit Linkage (1).png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Add\\\\Edit Linkage (1).png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Add\\\\Edit GDX (1).png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Add\\\\Edit GDX (1).png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Add\\\\Edit GDX (1).png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - พิจารณา ใบคำขอ (1).png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - พิจารณา ใบคำขอ (1).png\",\n      \"\\\\spec_response.cy.js\\\\notebook - พิจารณา ใบคำขอ (1).png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Ervice-search (1).png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Ervice-search (1).png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Ervice-search (1).png\",\n      \"\\\\spec_response.cy.js\\\\iphone 14 - Report (1).png\",\n      \"\\\\spec_response.cy.js\\\\ipad 11 - Report (1).png\",\n      \"\\\\spec_response.cy.js\\\\notebook - Report (1).png\",\n      \"\\\\spec_response.cy.js\\\\template spec -- passes (failed).png\",\n      \"\\\\spec_response.cy.js\\\\template spec -- passes -- after each hook (failed) (1).png\"\n    ]\n  ]\n}",
+              "code": "// cy.wait(1000);\npageUrl.forEach(page => {\n  cy.visit(page.url);\n  cy.log('Viewport: iphone 14');\n  cy.viewport(390, 844);\n  cy.screenshot(`iphone 14 - ${page.name}`, {\n    capture: 'runner'\n  });\n  cy.wait(1000);\n  cy.log('Viewport: ipad 11');\n  cy.viewport(834, 1194);\n  cy.screenshot(`ipad 11 - ${page.name}`, {\n    capture: 'runner'\n  });\n  cy.wait(1000);\n  cy.log('Viewport: notebook');\n  cy.viewport(1920, 1080);\n  cy.screenshot(`notebook - ${page.name}`, {\n    capture: 'runner'\n  });\n  cy.wait(1000);\n});",
+              "err": {
+                "message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get(#dropdownMenuButton1)\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `template spec`",
+                "estack": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nNo elements in the current DOM matched your query:\n\n  > cy.get(#dropdownMenuButton1)\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `template spec`\n    at isElement (http://localhost:4200/__cypress/runner/cypress_runner.js:145083:62)\n    at validateType (http://localhost:4200/__cypress/runner/cypress_runner.js:144941:14)\n    at Object.isType (http://localhost:4200/__cypress/runner/cypress_runner.js:144972:7)\n    at $Cy.pushSubject (http://localhost:4200/__cypress/runner/cypress_runner.js:138683:22)\n    at wrapped (http://localhost:4200/__cypress/runner/cypress_runner.js:138243:19)\nFrom Your Spec Code:\n    at Context.eval (webpack://auto_test/./cypress/e2e/spec_response.cy.js:50:35)",
+                "diff": null
+              },
+              "uuid": "0cb898a5-e2a7-45d5-9322-5ba830ef6807",
+              "parentUUID": "093a22bb-8cad-4408-8298-7aa6cb5e474e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0cb898a5-e2a7-45d5-9322-5ba830ef6807"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 410747,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\results\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

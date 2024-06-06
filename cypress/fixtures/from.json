@@ -1,0 +1,25 @@
+[{
+   "user1" : "offc03",
+   "user2" : "boss01",
+   "user3" : "admin01"
+},
+{
+    "user1" : "boss01",
+    "user2" : "boss01",
+    "user3" : "admin01"
+ 
+},
+{
+    "user1" : "admin01",
+    "user2" : "boss04",
+    "user3" : "admin01"
+ 
+},
+{
+    "user1" : "boss04",
+    "user2" : "boss04",
+    "user3" : "admin01"
+ 
+}
+
+]

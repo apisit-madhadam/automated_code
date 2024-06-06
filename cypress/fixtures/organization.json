@@ -1,0 +1,33 @@
+ [{
+    "orgName" : "testMama1",
+    "orgFloor": "1",
+    "orgHouseNo": "23/23",
+    "orgVillageNo" : "",
+    "orgLane" : "-",
+    "orgRoad": "รัชดา",
+    "orgProvince" : "กรุงเทพมหานคร",
+    "orgDistrict" : "ดินแดง",
+    "orgSubdistrictCode" : 10400,
+    "orgZipcode" :"" ,
+    "stardate" : "14/11/2566",
+    "enddate" : "29/11/2566",
+    "Flie" : "doc.pdf"
+
+},
+{
+    "orgName" : "testMama2",
+    "orgFloor": "12",
+    "orgHouseNo": "23/23",
+    "orgVillageNo" : "-",
+    "orgLane" : "-",
+    "orgRoad": "รัชดา",
+    "orgProvince" : "กรุงเทพมหานคร",
+    "orgDistrict" : "ดินแดง",
+    "orgSubdistrictCode" : 10400,
+    "orgZipcode" :"" ,
+    "stardate" : "-",
+    "enddate" : "-",
+    "Flie" : "doc.pdf'"
+}
+
+]

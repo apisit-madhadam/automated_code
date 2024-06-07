@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cypress/puppeteer": "^0.1.4",
     "cypress": "^13.11.0",
     "cypress-audit": "^1.1.0",
     "cypress-file-upload": "^5.0.8",

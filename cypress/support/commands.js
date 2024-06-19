@@ -142,7 +142,9 @@ Cypress.Commands.add("findChackBox", () => {
   .should('satisfy',($el) =>{
     const classList = Array.from($el[0].classList); 
     return classList.includes('modalCheck0') || classList.includes('modalCheck1')
-  })
+  });
+
+
 
 
   // const TestCommand = () => {
@@ -161,3 +163,45 @@ Cypress.Commands.add("findChackBox", () => {
   
   //TestCommand();
 });
+Cypress.Commands.add("tokenorg", (pinId, xApi) => {
+  cy.request({
+    method: "GET",
+    url: "http://localhost:8080/integration/auth/token",
+    qs: {
+      pin: pinId,
+    },
+    headers: {
+      "X-API-KEY": xApi,
+    },
+  }).then((response) => {
+    // Assertions inside the then block
+    expect(response.status).to.eq(200);
+    const accessToken = response.body.accessToken;
+    //cy.log(accessToken);
+    
+    // Use cy.wrap to wrap the accessToken and return it
+    return cy.wrap(accessToken);
+  });
+});
+
+Cypress.Commands.add("tokenorguat", (pinId, xApi) => {
+  cy.request({
+    method: "GET",
+    url: "https://edin-uat.excise.go.th/noitargetni-api/auth/token",
+    qs: {
+      pin: pinId,
+    },
+    headers: {
+      "X-API-KEY": xApi,
+    },
+  }).then((response) => {
+    // Assertions inside the then block
+    expect(response.status).to.eq(200);
+    const accessToken = response.body.accessToken;
+    //cy.log(accessToken);
+    
+    // Use cy.wrap to wrap the accessToken and return it
+    return cy.wrap(accessToken);
+  });
+});
+
